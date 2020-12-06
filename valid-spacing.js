@@ -5,9 +5,10 @@ function validSpacing(s) {
       return true
     } else {
   for(let i = 0; i < splitted.length; i++){
+    if(splitted[i] === '') return false
     if(splitted[i] === '' || splitted[0] === '' || splitted[splitted.length-1] === ''){
-     result = false
-   } else {
+      result = false
+    } else {
      result = true
    }
     }
